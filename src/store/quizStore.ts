@@ -69,7 +69,11 @@ export const useQuizStore = create<QuizStore>((set, get) => ({
         submittedAt: new Date().toISOString(),
       };
 
+      // Save to Firebase
       await addDoc(collection(db, 'quizSubmissions'), quizData);
+      
+      console.log('Quiz submitted successfully to Firebase');
+      
       set({ isSubmitting: false });
       return true;
     } catch (error) {
