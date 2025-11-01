@@ -398,7 +398,7 @@ export function DesignPreferencesStep() {
             <input
               type="range"
               min="1"
-              max="20"
+              max="10"
               value={numberOfPages}
               onChange={(e) => updateField('numberOfPages', parseInt(e.target.value))}
               className="w-full h-3 bg-purple-200 rounded-lg appearance-none cursor-pointer
