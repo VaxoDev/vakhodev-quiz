@@ -152,10 +152,13 @@ export function SummaryStep() {
         </div>
 
         <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg p-6 text-white">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mb-3">
             <span className="text-lg font-medium">სავარაუდო ჯამური ფასი</span>
             <span className="text-3xl font-bold">₾{totalPrice}</span>
           </div>
+          <p className="text-sm text-white/80 border-t border-white/20 pt-3">
+            * ეს არის ძალიან უხეში ფასი და შეიძლება არ იყოს სწორი. საბოლოო ფასი შეიძლება მნიშვნელოვნად განსხვავდებოდეს. გთხოვთ, არ მიიღოთ ეს ფასი როგორც საბოლოო შეთავაზება.
+          </p>
         </div>
 
         {error && (
